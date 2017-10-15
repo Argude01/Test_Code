@@ -8,7 +8,7 @@ function getBrands(){
   $result = $mysqli->query($query);
   $brands = '<option value="0"> Select a brand </option>';
   while($row = $result->fetch_array(MYSQLI_ASSOC)){
-    $brands .= "<option value='$row[idBrand]'>$row[Brand]</option>";
+    $brands .= "<option value='$row[idBrand]'>$row[brand]</option>";
   }
   return $brands;
 }
