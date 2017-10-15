@@ -8,7 +8,7 @@ function getProducts(){
   $result = $mysqli->query($query);
   $products = '<option value="0"> Select a product </option>';
   while($row = $result->fetch_array(MYSQLI_ASSOC)){
-    $products .= "<option value='$row[idProduct]'>$row[Product]</option>";
+    $products .= "<option value='$row[idProduct]'>$row[product]</option>";
   }
   return $products;
 }
